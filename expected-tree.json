@@ -1,0 +1,204 @@
+{
+  "_comment": "Expected dependency tree for paket-multi-project probe. Fields marked PLACEHOLDER must be substituted by the scan runner at comparison time. Three Mend projects correspond to App, Core, and Tests .csproj files; each carries only the packages listed in its paket.references (or project-specific override). The shared paket.lock at the repo root is the single source for all resolved versions.",
+  "updateType": "OVERRIDE",
+  "type": "UA",
+  "agent": "paket",
+  "agentVersion": "PLACEHOLDER",
+  "pluginVersion": "PLACEHOLDER",
+  "orgToken": "PLACEHOLDER",
+  "userKey": "PLACEHOLDER",
+  "timeStamp": 0,
+  "requesterEmail": "PLACEHOLDER",
+  "aggregateModules": false,
+  "preserveModuleStructure": true,
+  "extraProperties": {
+    "contributionsAvailable": "PLACEHOLDER",
+    "commitUrl": "PLACEHOLDER",
+    "gitHubInstallationId": "PLACEHOLDER",
+    "scmApplicationId": "PLACEHOLDER",
+    "branchName": "main",
+    "checkRunId": "PLACEHOLDER",
+    "userOrgToken": "PLACEHOLDER",
+    "commitId": "PLACEHOLDER",
+    "scmInstallationId": "PLACEHOLDER",
+    "repository": "paket-multi-project",
+    "scaResults": "PLACEHOLDER"
+  },
+  "scanSummaryInfo": {
+    "totalElapsedTime": 0,
+    "stepsSummaryInfo": [],
+    "packageManagers": ["paket"],
+    "isPrivileged": false,
+    "scanMethod": {
+      "type": "UA"
+    }
+  },
+  "contributions": [],
+  "projects": [
+    {
+      "_comment": "App project — src/App/App.csproj. Packages from src/App/paket.references: Newtonsoft.Json, Microsoft.Extensions.Logging",
+      "projectToken": "PLACEHOLDER",
+      "dependencies": [
+        {
+          "groupId": "",
+          "artifactId": "Newtonsoft.Json",
+          "version": "13.0.3",
+          "systemPath": "",
+          "optional": false,
+          "filename": "paket.lock",
+          "dependencyType": "NUGET",
+          "dependencyFile": "paket.lock",
+          "children": null
+        },
+        {
+          "groupId": "",
+          "artifactId": "Microsoft.Extensions.Logging",
+          "version": "8.0.0",
+          "systemPath": "",
+          "optional": false,
+          "filename": "paket.lock",
+          "dependencyType": "NUGET",
+          "dependencyFile": "paket.lock",
+          "children": [
+            {
+              "groupId": "",
+              "artifactId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "8.0.1",
+              "systemPath": "",
+              "optional": false,
+              "filename": "paket.lock",
+              "dependencyType": "NUGET",
+              "dependencyFile": "paket.lock",
+              "children": null
+            },
+            {
+              "groupId": "",
+              "artifactId": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "8.0.0",
+              "systemPath": "",
+              "optional": false,
+              "filename": "paket.lock",
+              "dependencyType": "NUGET",
+              "dependencyFile": "paket.lock",
+              "children": [
+                {
+                  "groupId": "",
+                  "artifactId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+                  "version": "8.0.1",
+                  "systemPath": "",
+                  "optional": false,
+                  "filename": "paket.lock",
+                  "dependencyType": "NUGET",
+                  "dependencyFile": "paket.lock",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "groupId": "",
+              "artifactId": "Microsoft.Extensions.Options",
+              "version": "8.0.0",
+              "systemPath": "",
+              "optional": false,
+              "filename": "paket.lock",
+              "dependencyType": "NUGET",
+              "dependencyFile": "paket.lock",
+              "children": [
+                {
+                  "groupId": "",
+                  "artifactId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+                  "version": "8.0.1",
+                  "systemPath": "",
+                  "optional": false,
+                  "filename": "paket.lock",
+                  "dependencyType": "NUGET",
+                  "dependencyFile": "paket.lock",
+                  "children": null
+                },
+                {
+                  "groupId": "",
+                  "artifactId": "Microsoft.Extensions.Primitives",
+                  "version": "8.0.0",
+                  "systemPath": "",
+                  "optional": false,
+                  "filename": "paket.lock",
+                  "dependencyType": "NUGET",
+                  "dependencyFile": "paket.lock",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_comment": "Core project — src/Core/Core.csproj. Packages from src/Core/paket.references: Serilog, AutoMapper",
+      "projectToken": "PLACEHOLDER",
+      "dependencies": [
+        {
+          "groupId": "",
+          "artifactId": "Serilog",
+          "version": "3.1.1",
+          "systemPath": "",
+          "optional": false,
+          "filename": "paket.lock",
+          "dependencyType": "NUGET",
+          "dependencyFile": "paket.lock",
+          "children": null
+        },
+        {
+          "groupId": "",
+          "artifactId": "AutoMapper",
+          "version": "12.0.1",
+          "systemPath": "",
+          "optional": false,
+          "filename": "paket.lock",
+          "dependencyType": "NUGET",
+          "dependencyFile": "paket.lock",
+          "children": [
+            {
+              "groupId": "",
+              "artifactId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "8.0.1",
+              "systemPath": "",
+              "optional": false,
+              "filename": "paket.lock",
+              "dependencyType": "NUGET",
+              "dependencyFile": "paket.lock",
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_comment": "Tests project — src/Tests/Tests.csproj. Packages from src/Tests/Tests.csproj.paket.references (project-specific override, takes precedence over directory-level paket.references): NUnit, NUnit3TestAdapter",
+      "projectToken": "PLACEHOLDER",
+      "dependencies": [
+        {
+          "groupId": "",
+          "artifactId": "NUnit",
+          "version": "3.14.0",
+          "systemPath": "",
+          "optional": false,
+          "filename": "paket.lock",
+          "dependencyType": "NUGET",
+          "dependencyFile": "paket.lock",
+          "children": null
+        },
+        {
+          "groupId": "",
+          "artifactId": "NUnit3TestAdapter",
+          "version": "4.5.0",
+          "systemPath": "",
+          "optional": false,
+          "filename": "paket.lock",
+          "dependencyType": "NUGET",
+          "dependencyFile": "paket.lock",
+          "children": null
+        }
+      ]
+    }
+  ]
+}
